@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DataProtection.Web.props" />
+</Project>

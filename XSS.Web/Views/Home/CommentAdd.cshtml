@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+    <head></head>
+    <body>
+        <form method="post">
+            <input name="name" />
+            <br/>
+            <textarea name="comment" >test</textarea>
+            <br />
+            <input type="submit" value="yorum gönder" />
+        </form>
+
+        <h1>Yorumlar</h1>
+    @if (ViewBag.comments != null)
+    {
+        @foreach (var comment in ViewBag.comments as string[])
+        {
+             <span>@Html.Raw(comment)</span>
+             <br />
+        }
+    }
+</body>
+</html>

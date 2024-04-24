@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\XSS.Web.props" />
+</Project>
